@@ -27,17 +27,19 @@ The raw dataset is publicly available on Kaggle and was not included in this rep
 
 ## Project Structure
 
-```text
-Netflix_EDA/
+```bash
+Netflix_Analysis/
+│
+├── Data/
+│   ├── Cleaned_Netflix_data.csv
+│   ├── Netflix_dataset.csv
 │
 ├── python/
-│   ├── Netflix_Project.ipynb
-│   ├── netflix_dataset.csv
-│   ├── Cleaned_Netflix_data.csv
+│   ├── Netflix_project.ipynb
 │   └── README.md
 │
-├── sql/
-│   ├── netflix_analysis.sql
+├── SQL/
+│   ├── Netflix_analysis
 │   └── README.md
 │
 └── README.md

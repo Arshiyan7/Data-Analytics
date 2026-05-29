@@ -35,7 +35,7 @@ Five CSV files were used out of the nine available:
 
 ## Project Structure
 
-```text
+```bash
 olist-analytics-project/
 ├── data/
 │   ├── orders_cleaned.csv
