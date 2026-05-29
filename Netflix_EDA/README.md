@@ -1,39 +1,81 @@
-# Netflix Content Analysis
+# Netflix Content Analysis Project
 
-## Overview
-This project performs an exploratory data analysis on the Netflix Movies and TV Shows 
-dataset sourced from Kaggle, containing titles available on Netflix up to 2021. 
-The goal is to uncover meaningful patterns around content growth, geographic 
-distribution, and audience demographics.
+An end-to-end data analytics project built on the Netflix Movies and TV Shows dataset. The goal of this project is to demonstrate a complete analytics pipeline across two industry-standard tools — Python and SQL — using a single real-world dataset from raw ingestion to business insight generation.
 
-## Business Questions Answered
-1. How has Netflix content volume changed over the years?
-2. Which countries contribute the most content to Netflix?
-3. Which directors have the most titles on Netflix?
-4. What is the typical duration of Movies and TV Shows?
-5. What content ratings dominate Netflix?
-6. How has Netflix's Movies vs TV Shows strategy shifted over time?
+---
 
-## Tools & Libraries
-- Python
-- Pandas
-- Matplotlib
-- Seaborn
+## Tools and Technologies
+
+| Tool | Purpose |
+|---|---|
+| Python (Pandas, Matplotlib, Seaborn) | Data cleaning, EDA and visualization |
+| SQL (PostgreSQL) | Business question analysis and querying |
+
+---
 
 ## Dataset
-- **Source:** Kaggle — Netflix Movies and TV Shows
-- **Size:** ~8,800 titles
-- **Features:** Title, Director, Cast, Country, Date Added, Release Year, Rating, Duration, Genre
 
-## Key Findings
-- Netflix content grew explosively from 2015, peaking in 2019 before declining due to COVID-19.
-- The US dominates Netflix's library, followed by India and the UK.
-- Netflix primarily targets adult audiences — TV-MA is the most dominant rating.
-- Most TV Shows run for only 1 season, while movies average 90–110 minutes.
+The raw dataset is publicly available on Kaggle and was not included in this repository to keep it lightweight.
 
-## How to Run
-1. Clone the repository
-2. Navigate to the project folder
-3. Install dependencies: `pip install pandas matplotlib seaborn`
-4. Open the notebook in Jupyter
-5. Run all cells
+[Download the Netflix Dataset from Kaggle](https://www.kaggle.com/datasets/shivamb/netflix-shows)
+
+| File | Description |
+|---|---|
+| netflix_titles.csv | Title, type, director, cast, country, date added, rating, duration, genre |
+
+---
+
+## Project Structure
+
+```text
+Netflix_EDA/
+│
+├── python/
+│   ├── Netflix_Project.ipynb
+│   ├── netflix_dataset.csv
+│   ├── Cleaned_Netflix_data.csv
+│   └── README.md
+│
+├── sql/
+│   ├── netflix_analysis.sql
+│   └── README.md
+│
+└── README.md
+```
+
+---
+
+## Business Questions Answered
+
+### Python EDA
+
+| # | Question |
+|---|---|
+| 1 | What is the distribution of Movies vs TV Shows on Netflix? |
+| 2 | Which countries produce the most Netflix content? |
+| 3 | How has Netflix content grown over the years? |
+| 4 | What are the most common ratings on Netflix? |
+| 5 | What are the most popular genres on Netflix? |
+| 6 | What is the most common movie duration on Netflix? |
+
+### SQL Analysis
+
+| # | Question |
+|---|---|
+| 1 | How many Movies vs TV Shows are on Netflix? |
+| 2 | What are the top 10 most common ratings on Netflix? |
+| 3 | How many titles were added to Netflix each year? |
+| 4 | Show all Movies released in 2020 |
+| 5 | Show all content from United States sorted by release year |
+| 6 | Which top 5 countries produce the most Netflix content? |
+| 7 | What is the most common duration for Movies? |
+| 8 | Which directors have more than 3 titles on Netflix? |
+| 9 | Show Movies and TV Shows added each year |
+| 10 | Which genre category appears the most on Netflix? |
+
+---
+
+## Author
+
+Arshiyan Mairaj
+[LinkedIn](https://linkedin.com/in/arshiyanmairaj/) | [GitHub](https://github.com/Arshiyan7)
